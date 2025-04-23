@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>你的博客标题</title>
+    <title>个人博客</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
@@ -14,23 +14,28 @@
         </div>
         <nav class="sidebar-nav">
             <ul>
+                <li><a href="#home">首页</a></li>
                 <li><a href="#intro">简介</a></li>
                 <li><a href="#chapter1">第一章</a></li>
-                <!-- 添加更多目录项 -->
             </ul>
         </nav>
     </aside>
 
     <!-- 右侧内容区 -->
     <main class="content">
-        <article id="intro">
-            <h1>简介</h1>
-            <p>这里是你的博客内容...</p>
+        <article id="home" class="content-article active">
+            <h1>欢迎来到我的博客</h1>
+            <p>这里是默认显示的首页内容...</p>
         </article>
         
-        <article id="chapter1">
+        <article id="intro" class="content-article">
+            <h1>简介</h1>
+            <p>这里是简介内容...</p>
+        </article>
+
+        <article id="chapter1" class="content-article">
             <h1>第一章</h1>
-            <p>章节内容...</p>
+            <p>这里是第一章内容...</p>
         </article>
     </main>
 
